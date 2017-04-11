@@ -1,14 +1,14 @@
-const joi = require('joi');
+const Joi = require('joi');
 
 const dbQueries = {};
 
 dbQueries.postTransaction = (connPool, data, callback) => {
-  const schema = joi.object({
-    name: joi.string().regex(/^[a-zA-Z]{3,40}$/),
-    amount: joi.number().integer()
+  const schema = Joi.object({
+    name: Joi.string().regex(/^[a-zA-Z]{3,40}$/),
+    amount: Joi.number().integer()
   });
 
-  joi.validate({ name: data.name, amount: data.amount }, schema, (err, validated) => {
+  Joi.validate({ name: data.name, amount: data.amount }, schema, (err, validated) => {
     if (err) {
       callback('Invalid Data');
       return;

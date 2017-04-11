@@ -9,8 +9,7 @@ CREATE TABLE kitty (
   transaction_value INT NOT NULL
 );
 
-INSERT INTO kitty (name, transaction_value)
-VALUES
+INSERT INTO kitty (name, transaction_value) VALUES
 ('Mario', 25), ('Edgar', 25), ('Eoin', -50);
 
 COMMIT;
