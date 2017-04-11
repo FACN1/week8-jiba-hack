@@ -5,6 +5,7 @@
   ],
   "rules": {
     "comma-dangle": ["error", "never"],
-    "no-console": "off"
+    "no-console": "off",
+    "arrow-body-style": "off"
   }
 }
