@@ -8,10 +8,10 @@ const handler = (request, reply) => {
     }
     reply.redirect('/');
   });
-}
+};
 
 module.exports = {
   method: 'POST',
   path: '/transact',
-  handler: handler
-}
+  handler
+};
