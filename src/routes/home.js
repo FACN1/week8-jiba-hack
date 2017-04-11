@@ -15,7 +15,7 @@ const handler = (request, reply) => {
       total,
       rows: response.rows.slice(0, NUM_OF_RESULTS)
     };
-    reply.view('home', data);
+    return reply.view('home', data);
   });
 };
 

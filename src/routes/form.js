@@ -1,5 +1,5 @@
 const handler = (request, reply) => {
-  reply.view('form', {
+  return reply.view('form', {
     title: 'Update'
   });
 };
