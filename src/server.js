@@ -1,5 +1,5 @@
 const hapi = require('hapi');
-//package of hapi for serving static file
+// package of hapi for serving static file
 const inert = require('inert');
 const vision = require('vision');
 const path = require('path');
@@ -16,8 +16,8 @@ server.connection({
 
 server.register([inert, vision], (err) => {
   if (err) throw err;
-  //link the routes to our server
-  //each route has a handler
+  // link the routes to our server
+  // each route has a handler
   server.route(routes);
 
   server.views({
