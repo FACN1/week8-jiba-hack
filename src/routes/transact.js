@@ -4,9 +4,9 @@ const dbQueries = require('../db_queries.js');
 const handler = (request, reply) => {
   dbQueries.postTransaction(connPool, request.payload, (err) => {
     if (err) {
-      reply(`error when adding to database: ${err}`);
+      return reply(`error when adding to database: ${err}`);
     }
-    reply.redirect('/');
+    return reply.redirect('/');
   });
 };
 
