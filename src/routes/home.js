@@ -6,21 +6,21 @@ const NUM_OF_RESULTS = 50;
 const handler = (request, reply) => {
   dbQueries.retrieveTransactions(connPool, (err, response) => {
     // Sum the transactions in the kitty
-    let total = response.rows.reduce((transactionSum, row) => {
+    const total = response.rows.reduce((transactionSum, row) => {
       return transactionSum + row.transaction_value;
     }, 0);
 
-    let data  = {
+    const data = {
       title: 'Kitty I/O',
-      total: total,
+      total,
       rows: response.rows.slice(0, NUM_OF_RESULTS)
-    }
-    reply.view('home', data)
+    };
+    reply.view('home', data);
   });
-}
+};
 
 module.exports = {
   method: 'GET',
   path: '/',
-  handler: handler
-}
+  handler
+};
