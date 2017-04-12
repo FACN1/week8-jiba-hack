@@ -33,9 +33,9 @@ week7-rm-rf-mario
   + server.js
   + start.js
 - database/
-  + db_build.js (initialize database with db_build.sql)
-  + db_build.sql (create database SQL syntax)
-  + db_connection.js (database connection parameters)
+  + db_build.js
+  + db_build.sql
+  + db_connection.js
 - tests/
   + back-end/
     + tests.js
