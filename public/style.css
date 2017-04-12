@@ -211,7 +211,7 @@ input[type=submit]:hover {
 	right: 0;
 	height: 100px;
 	width: 100px;
-	border-left: 5px solid #f0f5f5;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 	background-size: cover;
 	background-color: #222;
 	color: rgba(0, 0, 0, 0);
