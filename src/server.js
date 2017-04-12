@@ -10,7 +10,8 @@ const HapiAuth = require('hapi-auth-jwt2');
 const server = new Hapi.Server();
 
 server.connection({
-  port: process.env.PORT || 9000
+  port: process.env.PORT || 9000,
+  state: { isSameSite: 'Lax' }
 });
 
 // validate function (token already decoded)

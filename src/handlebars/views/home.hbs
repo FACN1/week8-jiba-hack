@@ -1,14 +1,20 @@
 <section class="list-wrap">
-  <h2 class="current-total">{{total}}</h2>
-  <ul class="transaction-list">
-    {{#each rows}}
-      <li>
-        <span class="li-name">{{name}}</span>
-        -
-        <span class="li-date">{{formatDate transaction_date}}</span>
-        -
-        <span class="li-value">{{transaction_value}}</span>
-      </li>
-    {{/each}}
-  </ul>
+  {{#if loggedIn}}
+    <h2 class="current-total">{{total}}</h2>
+    <ul class="transaction-list">
+      {{#each rows}}
+        <li>
+          <span class="li-name">{{name}}</span>
+          -
+          <span class="li-date">{{formatDate transaction_date}}</span>
+          -
+          <span class="li-value">{{transaction_value}}</span>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <div class="padlock fa fa-lock" style="font-size:350px">
+      <a href="/login" class="login-button">LOGIN</a>
+    </div>
+  {{/if}}
 </section>
