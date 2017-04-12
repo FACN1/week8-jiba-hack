@@ -4,6 +4,7 @@ const transactRoute = require('./transact.js');
 const homeRoute = require('./home.js');
 const loginRoute = require('./login.js');
 const accessRoute = require('./access.js');
+const logoutRoute = require('./logout.js');
 
 // export all the routes in one array
 module.exports = [
@@ -12,5 +13,6 @@ module.exports = [
   transactRoute,
   homeRoute,
   loginRoute,
-  accessRoute
+  accessRoute,
+  logoutRoute
 ];
