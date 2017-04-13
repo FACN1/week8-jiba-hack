@@ -2,12 +2,11 @@
 
 #### A CMS (content management system) app that keeps track of the kitty for the guest house.
 
-Find us on [Heroku](https://kittyio.herokuapp.com/)...
-
-...or run locally:
+## Local Installation
+- Get the config.env details from us on Gitter
 ```bash
-git clone https://github.com/FACN1/week7-rm-rf-mario.git
-cd week7-rm-rf-mario
+git clone https://github.com/FACN1/week8-jiba-hack.git
+cd week8-jiba-hack
 npm install
 npm start
 ```
