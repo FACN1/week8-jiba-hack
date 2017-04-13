@@ -222,6 +222,18 @@ input[type=submit]:hover {
 	text-decoration: none;
 }
 
+@media (max-width: 654px) {
+	.user-image{
+		position: relative;
+	}
+	.page-title{
+		display:none;
+	}
+	.header-wrap{
+		justify-content: space-around;
+	}
+}
+
 .user-image:hover {
 	background-image: none !important;
 	color: white;
