@@ -12,9 +12,11 @@
         </li>
       {{/each}}
     </ul>
+    <span hidden>loggedIn</span> <!-- testing -->
   {{else}}
     <div class="padlock fa fa-lock" style="font-size:350px">
       <a href="/login" class="login-button">LOGIN</a>
     </div>
+    <span hidden>notLoggedIn</span> <!-- testing -->
   {{/if}}
 </section>

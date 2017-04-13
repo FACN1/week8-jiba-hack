@@ -4,7 +4,7 @@
   "description": "",
   "main": "start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./tests/back-end/tests.js | tap-spec",
     "start": "node src/start.js",
     "dev": "nodemon src/start.js",
     "prepush": "npm run lint",
@@ -30,6 +30,8 @@
     "jsonwebtoken": "^7.3.0",
     "pg": "^6.1.5",
     "request": "^2.81.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
     "url": "^0.11.0",
     "vision": "^4.1.1"
   },
