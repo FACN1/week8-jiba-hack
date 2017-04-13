@@ -18,7 +18,7 @@ module.exports = {
   config: {
     validate: {
       payload: {
-        name: Joi.string().regex(/^[a-zA-Z]{3,40}$/),
+        name: Joi.string().regex(/^[a-zA-Z ]{3,40}$/),
         amount: Joi.number().integer()
       }
     }
